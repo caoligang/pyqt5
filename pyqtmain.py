@@ -14,14 +14,11 @@ if __name__ == "__main__":
     ui = mainWindow.Ui_MainWindow()
     ui.setupUi(mainWin)
     mainWin.show()
+    sys.exit(app.exec_())
 
-
-
-
-filePath=r'/Users/caoligang/remote/110000BJ_L5_TM_1990.tif'
+'''filePath=r'/Users/caoligang/remote/110000BJ_L5_TM_1990.tif'
 ds=gdal.Open(filePath)
 dir(ds)
 print(ds.GetMetadata())
 print(ds.RasterCount)
-
-  #  sys.exit(app.exec_())
+'''
